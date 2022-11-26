@@ -6,7 +6,7 @@ import { LinearEncoding, RepeatWrapping, TextureLoader } from 'three';
 export default function Ground() {
   const [roughness, normal] = useLoader(TextureLoader, [
     process.env.PUBLIC_URL + "textures/rough-texture.jpg",
-    process.env.PUBLIC_URL + "textures/normal-texture.png",
+    process.env.PUBLIC_URL + "textures/normal-texture.jpg",
   ]);
 
   useEffect(() => {

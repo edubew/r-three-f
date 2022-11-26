@@ -2,6 +2,8 @@ import React, { Suspense} from 'react';
 import { Canvas } from '@react-three/fiber';
 import "./App.css";
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import Ground from './components/Ground';
+import Profile from './components/Profile';
 
 const Header = () => {
   return (
@@ -35,6 +37,8 @@ const Header = () => {
         castShadow
         shadow-bias={-0.0001}
       />
+      <Ground />
+      <Profile />
     </>
   );
 }
